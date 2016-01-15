@@ -198,6 +198,7 @@ when /darwin/
 
   # on Unix we need a g++ link, not gcc.
   # Ff line contributed by Daniel Harple.
+  CONFIG["CXX"] = "g++"
   CONFIG['LDSHARED'] = "$(CXX) " + CONFIG['LDSHARED'].split[1..-1].join(' ')
 
 when /linux/
